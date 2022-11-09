@@ -1,4 +1,4 @@
-Basic script to download youtube videos using pytube
+Simple script to download youtube videos using pytube
 
 Usage:
 1. Paste in YouTube link
