@@ -1,7 +1,8 @@
 from pytube import YouTube
+from pytube.cli import on_progress
 
 link = input("Link: ")
-yt = YouTube(link)
+yt = YouTube(link,on_progress_callback=on_progress)
 print("Title:", yt.title)
 
 fileSuccess = 0
@@ -17,5 +18,4 @@ while fileSuccess == 0:
         print("Not one of the available filetypes(mp4 or webm), try again")
 
 location = input("Download Location: ")
-
 filedown.download(location)
